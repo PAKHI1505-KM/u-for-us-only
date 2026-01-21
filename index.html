@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>U • For Us Only</title>
+<link rel="stylesheet" href="style.css">
+
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+</head>
+
+<body>
+
+<div id="startScreen">
+  <h1>U</h1>
+  <p class="subtitle">for us only</p>
+
+  <input id="roomInput" placeholder="Room code">
+  <select id="role">
+    <option value="drawer">I will draw</option>
+    <option value="guesser">I will guess</option>
+  </select>
+
+  <button id="startBtn">Enter together 💗</button>
+</div>
+
+<div id="game">
+  <h2 id="prompt">Draw something…</h2>
+
+  <canvas id="canvas" width="300" height="300"></canvas>
+
+  <input id="guessInput" placeholder="Your guess">
+  <button id="sendGuess">Send Guess</button>
+
+  <p id="reaction"></p>
+
+  <button id="clearCanvas">Clear for both</button>
+
+  <div class="music-box">
+    <button onclick="playMood('soft')">💗 Soft</button>
+    <button onclick="playMood('cute')">🌸 Cute</button>
+    <button onclick="playMood('lovely')">✨ Lovely</button>
+    <button onclick="playMood('aesthetic')">🌙 Aesthetic</button>
+  </div>
+
+  <iframe id="musicPlayer"></iframe>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
