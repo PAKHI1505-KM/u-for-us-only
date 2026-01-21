@@ -1,0 +1,39 @@
+body {
+  font-family: Poppins, sans-serif;
+  background: linear-gradient(#ffeef4, #f9f9ff);
+  text-align: center;
+  margin: 0;
+}
+
+#startScreen {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+#game {
+  display: none;
+  padding: 20px;
+}
+
+canvas {
+  background: white;
+  border: 2px dashed #ffb3c6;
+  border-radius: 15px;
+  touch-action: none;
+}
+
+button {
+  background: #ff6f91;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  margin: 5px;
+}
+
+iframe {
+  display: none;
+}
